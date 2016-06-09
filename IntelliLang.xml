@@ -1,0 +1,23 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <option name="INSTRUMENTATION" value="ASSERT" />
+    <option name="LANGUAGE_ANNOTATION" value="org.intellij.lang.annotations.Language" />
+    <option name="PATTERN_ANNOTATION" value="org.intellij.lang.annotations.Pattern" />
+    <option name="SUBST_ANNOTATION" value="org.intellij.lang.annotations.Subst" />
+    <option name="RESOLVE_REFERENCES" value="true" />
+    <injection language="RegExp" injector-id="java">
+      <display-name>Files (java.nio.file)</display-name>
+      <place><![CDATA[psiMethod().withName("probeContentType").withParameters("java.nio.file.Path").definedInClass("java.nio.file.Files")]]></place>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("createTempDirectory").withParameters("java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(0, psiMethod().withName("createTempFile").withParameters("java.lang.String", "java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("createTempDirectory").withParameters("java.nio.file.Path", "java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("createTempFile").withParameters("java.lang.String", "java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("createTempFile").withParameters("java.nio.file.Path", "java.lang.String", "java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("getAttribute").withParameters("java.nio.file.Path", "java.lang.String", "java.nio.file.LinkOption...").definedInClass("java.nio.file.Files"))]]></place>
+      <place disabled="true"><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("newDirectoryStream").withParameters("java.nio.file.Path", "java.lang.String").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("readAttributes").withParameters("java.nio.file.Path", "java.lang.String", "java.nio.file.LinkOption...").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(1, psiMethod().withName("setAttribute").withParameters("java.nio.file.Path", "java.lang.String", "java.lang.Object", "java.nio.file.LinkOption...").definedInClass("java.nio.file.Files"))]]></place>
+      <place><![CDATA[psiParameter().ofMethod(2, psiMethod().withName("createTempFile").withParameters("java.nio.file.Path", "java.lang.String", "java.lang.String", "java.nio.file.attribute.FileAttribute[]").definedInClass("java.nio.file.Files"))]]></place>
+    </injection>
+  </component>
+</application>
