@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="List" type="PLAIN_TEXT" />
       <mapping pattern="testAra" type="PLAIN_TEXT" />
       <mapping pattern="Dlist" type="PLAIN_TEXT" />
       <mapping pattern="rooms" type="PLAIN_TEXT" />
